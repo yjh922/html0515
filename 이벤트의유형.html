@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onLoad="alert('문서가 모두 로드되었어요')">
+    <!--
+        Event?현실에서의 사건,사고를 의미한다.
+        하지만 전산에서는 현재 프로그램의 영역 내에서 발생하는 이벤트로 한정짓는다
+        예) 웹브라으저에서 발생하는 사건 사고
+            클릭할때 : click이벤트                   on~
+            더블클릭할때 : dblclick 이벤트
+            마우스 올려놓으면 발생 : mouseover 이벤트
+            마우수 내려놓으면 발생 : mouseout 이벤트
+            커서 올려놓으면 발생 : focus 이벤트
+            커서 내려놓으면 발생 : blur 이벤트
+            문서로드 될때 발생 : load이벤트
+            선택을 바꿀때, 혹은 값을 바꿀때 : change 이벤트
+    -->
+
+    <button onMouseOver="alert('마우수 올렸어?')">마우스 올려놓으면</button>
+    <button onMouseOut="alert('마우수 내렸어?')">마우스 내려놓으면</button>
+
+    <input type="text" onFocus="alert('커서올렸어?')" placeholder="여기에 커서를 올려보세요"> 
+    <input type="text" onBlur="alert('커서버서났어?')" onChange="alert('바꿨어?')"> 
+
+    <select onChange="alert('값 변경했어?')">
+        <option value="사과">사과</option>
+        <option value="딸기">딸기</option>
+        <option value="바나나">바나나</option>
+    </select>
+</body>
+</html>
